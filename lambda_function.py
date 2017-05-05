@@ -19,9 +19,10 @@ def session_ended_request_handler(request):
 
 @alexa.intent_handler("GetFactIntent")
 def get_fact_intent_handler(request):
-    ############################
-    # Here is where we will write the logic for Fun Facts!
-    ############################
+    linesOfFacts = [line.rstrip('/n') for line in open ('facts.txt')]
+    index = randint(0, len(linesOfFacts) - 1)
+    fact = linesOfFacts[index]
+    return alexa.create_response(message=fact, end_session=True)
 
 @alexa.intent_handler("AMAZON.HelpIntent")
 def help_intent_handler(request):

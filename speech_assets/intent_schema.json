@@ -1,5 +1,3 @@
-// TODO: Add a "GetFactIntent" intent with the proper slot
-// Don't forget to delete these first two lines once you're done!
 {
     "intents": [
         {
@@ -10,6 +8,9 @@
         },
         {
             "intent": "AMAZON.CancelIntent"
+        },
+        {
+            "intent": "GetFactIntent"
         }
     ]
 }

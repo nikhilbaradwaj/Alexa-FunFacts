@@ -1,7 +1,8 @@
-// TODO: Add the utterances for the "GetFactIntent" function
-// You can also add other statements to the functions below
 AMAZON.HelpIntent    what can I say
 AMAZON.HelpIntent    what can I ask
 AMAZON.StopIntent  no stop
 AMAZON.StopIntent  no
 AMAZON.StopIntent  bye
+GetFactIntent  give me a fun fact
+GetFactIntent  fun fact of the day please
+GetFactIntent  blow my mind with a fun fact
